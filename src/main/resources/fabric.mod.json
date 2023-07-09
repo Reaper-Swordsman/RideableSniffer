@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "rideablesniffer",
+	"version": "${version}",
+	"name": "Rideable Sniffer",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"T€MP0"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT License",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.anjak.rideablesniffer.RideableSniffer"
+		],
+		"client": [
+			"net.anjak.rideablesniffer.RideableSnifferClient"
+		]
+	},
+	"mixins": [
+		"rideablesniffer.mixins.json"
+
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
